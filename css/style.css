@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(228, 240, 228);
+    font-family: 'Merriweather', serif;
+
+}
+
+main {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+img {
+    border-radius: 50%;
+    grid-area: pic;
+    width: 150px;
+}
+
+header {
+    padding: 40px 0 20px 0;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+p {
+    color: rgb(150, 150, 150);
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    width: 100%;
+    justify-items: stretch;
+}
+
+.profile {
+    background-color: rgb(240, 241, 240);
+    height: 200px;
+    border-radius: 10px;
+    border: 3px solid rgb(212, 212, 212);
+    display: grid;
+    grid-template-areas:
+        'pic data';
+    grid-template-columns: 2fr 3fr;
+}
+
+.img {
+    display: grid;
+}
+
+.profile-data {
+    display: grid;
+    grid-area: data;
+    grid-template-rows: 3fr 2fr 3fr;
+}
+
+.profile-data h3 {
+    align-self: end;
+    margin-bottom: 0;
+    font-weight: 900;
+}
+
+.email {
+    align-self: center;
+}
+
+.city {
+    align-self: start;
+    margin-top: 0;
+}
+
+#directory {
+    width: 90vw;
+}
