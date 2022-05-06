@@ -1,5 +1,5 @@
 const img = document.querySelectorAll('img');
-const name = document.querySelectorAll('h3');
+const name = document.querySelectorAll('profile-data, h3');
 const email = document.querySelectorAll('.email');
 const city = document.querySelectorAll('.city');
 const profile = document.querySelectorAll('.profile');
@@ -44,6 +44,8 @@ getRandomUser(12)
 
 profile.forEach(profile => {
     profile.addEventListener('click', async (event) => {
-        console.log('it worked!');
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("popup").style.display = "grid";
+        console.log(event.currentTarget)
     })
 });
