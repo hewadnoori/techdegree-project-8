@@ -102,6 +102,7 @@ p {
     grid-gap: 20px;
     width: 100%;
     justify-items: stretch;
+    padding-bottom: 40px;
 }
 
 .profile {
@@ -116,7 +117,6 @@ p {
 }
 
 .profile:hover {
-    animation-duration: 1000;
     transform: scale(1.05);
     border: 3px solid rgb(161, 161, 161);
 }
