@@ -43,6 +43,7 @@ body {
     justify-self: end;
     padding-right: 30px;
     font-size: 25px;
+    padding-left: 20px;
 }
 
 #popup .popup-img {
@@ -112,6 +113,12 @@ p {
     grid-template-areas:
         'pic data';
     grid-template-columns: 2fr 3fr;
+}
+
+.profile:hover {
+    animation-duration: 1000;
+    transform: scale(1.05);
+    border: 3px solid rgb(161, 161, 161);
 }
 
 .img {
