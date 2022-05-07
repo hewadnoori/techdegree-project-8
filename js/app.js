@@ -7,11 +7,6 @@ const address = document.querySelectorAll('.address');
 const birthday = document.querySelectorAll('.birthday');
 const profile = document.querySelectorAll('.profile');
 
-console.log(img);
-console.log(name);
-console.log(email);
-console.log(city);
-console.log(address);
 const profiles = [];
 
 async function getRandomUser(userAmount) {
@@ -75,7 +70,11 @@ profile.forEach(profile => {
         popupCity.textContent = city.textContent;
         popupPhone.textContent = phone.textContent;
         popupAddress.textContent = address.textContent;
-        popupBirthday.textContent = birthday.textContent;
+        //makes the birthday format from data given
+        let d;
+        d = new Date(Date.parse(popupBirthday.textContent));
+        console.log(d)
+        popupBirthday.textContent = `Birthday: ${d.getUTCMonth() + 1}/${d.getUTCDate()}/${d.getUTCFullYear().toString().slice(2, 4)}`;
     });
 });
 

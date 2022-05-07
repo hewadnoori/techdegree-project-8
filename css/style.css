@@ -29,7 +29,8 @@ body {
     justify-items: center;
     justify-self: center;
     align-self: center;
-    position: fixed;
+    position: absolute;
+    margin-bottom: 240px;
     background-color: aliceblue;
     width: 32vw;
     height: 600px;
